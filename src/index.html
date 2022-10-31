@@ -1,90 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>TitiPrint</title>
 
     <!-- Favicons -->
-    <link href="../assets/img/favicon.png" rel="icon">
-    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="../assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900' rel='stylesheet'>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
 
     <!-- Vendor CSS Files -->
-    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../assets/css/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="../assets/css/vendor/bootstrap/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- Template Main CSS File -->
-    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/index.css" rel="stylesheet" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top">
-        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <a href="/" class="logo d-flex align-items-center">
+          <img src="../assets/img/logo.png" alt="TitiPrint" />
+          <span><span class="text-white">Titi</span>Print</span>
+        </a>
 
-            <a href="index.html" class="logo d-flex align-items-center">
-                <img src="../assets/img/logo.png" alt="">
-                <span><span class="text-white">Titi</span>Print</span>
-            </a>
-
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a class="nav-link active" href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#">Daftar Pesanan</a></li>
-                    <li><a class="getstarted scrollto rounded-pill" href="#">Pesan Jasa</a></li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav>
-            <!-- .navbar -->
-
-        </div>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link active" href="/">Home</a></li>
+            <li><a class="nav-link scrollto" href="/cari">Cek Pesanan</a></li>
+            <li>
+              <a class="nav-link scrollto" href="/pembayaran"
+                >Informasi Pembayaran</a
+              >
+            </li>
+            <li>
+              <a
+                class="getstarted scrollto rounded-pill text-white"
+                href="/pesan"
+                >Pesan Jasa</a
+              >
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
     </header>
-    <!-- End Header -->
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="hero d-flex align-items-center">
-
+    <!-- Main Content -->
+    <main>
+      <!-- Header -->
+      <section id="hero" class="hero d-flex align-items-center">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 d-flex flex-column justify-content-center">
-                    <h1 data-aos="fade-up">Mau Nge-Print<br>Tapi Malas<br>Keluar?</h1>
-                    <h2 data-aos="fade-up" data-aos-delay="400">Jangan risau, TitiPrint aja!</h2>
-                    <div data-aos="fade-up" data-aos-delay="600">
-                        <div class="text-center text-lg-start">
-                            <a href="#" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center rounded-pill">
-                                <span>Pesan Jasa</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
+          <div class="row">
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+              <h1 data-aos="fade-up">
+                Mau Nge-Print<br />Tapi Malas<br />Keluar?
+              </h1>
+              <h2 data-aos="fade-up" data-aos-delay="400">
+                Jangan risau, <span class="fw-bold">TitiPrint</span> aja!
+              </h2>
+              <div data-aos="fade-up" data-aos-delay="600">
+                <div class="text-center text-lg-start">
+                  <a
+                    href="/pesan"
+                    class="btn-get-started text-white me-3 scrollto d-inline-flex align-items-center justify-content-center align-self-center rounded-pill"
+                  >
+                    <span>Pesan Jasa</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                  <a
+                    href="/cari"
+                    class="btn-get-started py-4 scrollto d-inline-flex align-items-center justify-content-center align-self-center rounded-pill"
+                  >
+                    <span>Cek Pesanan</span>
+                  </a>
                 </div>
-                <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-                    <img src="../assets/img/hero-img.png" class="img-fluid" alt="">
-                </div>
+              </div>
             </div>
+            <div
+              class="col-lg-6 hero-img"
+              data-aos="zoom-out"
+              data-aos-delay="200"
+            >
+              <img
+                src="../assets/img/hero-img.png"
+                class="img-fluid"
+                alt="TitiPrint"
+              />
+            </div>
+          </div>
         </div>
+      </section>
 
-    </section>
-    <!-- End Hero -->
+      <!-- About Us -->
+      <section id="about" class="py-5 d-flex align-items-center">
+        <div class="container text-center">
+          <h2 class="fw-bold mb-5">Apa itu Titi<span>Print</span>?</h2>
+          <p class="fs-3">
+            Solusi mudah memesan layanan print secara online di manapun dan
+            kapanpun.
+          </p>
+        </div>
+      </section>
+
+      <!-- Flow -->
+      <section id="flow" class="py-5 d-flex align-items-center">
+        <div class="container text-white">
+          <h2 class="text-center fw-bold mb-5">
+            Bagaimana cara pesan di Titi<span>Print</span>?
+          </h2>
+
+          <div class="container-fluid py-5">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="horizontal-timeline">
+                  <ul class="list-inline items pt-3">
+                    <li class="list-inline-item items-list">
+                      <div class="px-4">
+                        <div class="event-date badge bg-info">1</div>
+                        <h5 class="pt-2">Pesan</h5>
+                        <p class="text-muted">
+                          Buat pesananmu secara online pada menu
+                          <span class="fw-semibold">Pesan Jasa</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="list-inline-item items-list">
+                      <div class="px-4">
+                        <div class="event-date badge bg-success">2</div>
+                        <h5 class="pt-2">Bayar</h5>
+                        <p class="text-muted">
+                          Kirim pembayaran secara mudah melalui menu
+                          <span class="fw-semibold">Informasi Pembayaran</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="list-inline-item items-list">
+                      <div class="px-4">
+                        <div class="event-date badge bg-danger">3</div>
+                        <h5 class="pt-2">Cek Status</h5>
+                        <p class="text-muted">
+                          Pakai kode unikmu untuk cek status pengerjaan barang
+                          pada menu <span class="fw-semibold">Cek Pesanan</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="list-inline-item items-list">
+                      <div class="px-4">
+                        <div class="event-date badge bg-warning">4</div>
+                        <h5 class="pt-2">Ambil Pesanan</h5>
+                        <p class="text-muted">
+                          Dapatkan kepastian kesiapan pesanan dengan status
+                          <span class="fw-semibold">Siap Diambil</span>
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="py-5 d-flex align-items-center">
+        <div class="container">
+          <h2 class="text-center fw-bold mb-5">Butuh bantuan? Kontak kami!</h2>
+          <form action="/" method="POST">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Alamat Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder=""
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Pesan</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <button type="button" class="btn fw-semibold px-4">Kirim</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-4 p-5 text-white">
+      <div class="container">
+        <a href="/" class="logo d-flex align-items-center mb-4">
+          <img src="../assets/img/logo.png" alt="TitiPrint" class="me-4" />
+          <span><span class="text-white">Titi</span>Print</span>
+        </a>
+        <p>Copyright &copy; 2022. <span class="fw-semibold">TitiPrint</span></p>
+      </div>
+    </footer>
 
     <!-- Vendor JS Files -->
-    <script src="../assets/vendor/aos/aos.js"></script>
-    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/vendor/aos/aos.js"></script>
+    <script src="../assets/js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/vendor/glightbox/glightbox.min.js"></script>
+    <script src="../assets/js/vendor/swiper/swiper-bundle.min.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="../assets/js/main.js"></script>
-
-</body>
-
+    <script src="../assets/js/index.js"></script>
+  </body>
 </html>
