@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/admin-order-detail.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="h-100 p-5 text-bg-dark">
+      <div class="d-flex align-items-center">
+        <img src="" alt="Logo" />
+        <h2>TitiPrint</h2>
+      </div>
+      <p>
+        Slogan perusahaan
+      </p>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+      <div class="container-fluid px-5">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav me-auto">
+            <a class="nav-link active fw-semibold" aria-current="page" href="#"
+              >Daftar Pesanan</a
+            >
+            <a class="nav-link" href="#">Profil</a>
+        </div>
+        <div class="navbar-text">
+            <button class="nav-link bg-transparent border-0 ml-auto">Logout</button>
+        </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="p-5">
+        <h2>Detail Pesanan</h2>
+
+        <div id="detail-order-table" class="table-responsive">
+            <table class="table table-borderless">
+                <tbody>
+                  <tr>
+                    <th scope="row">Kode Pesanan</th>
+                    <td>QK6AJI6S</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Status Pesanan</th>
+                    <td><span class="badge bg-warning">Mengunggu verfikasi pembayaran</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Nama Pemesan</th>
+                    <td>Johannes Gulla</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Total Harga</th>
+                    <td>Rp 15.000,00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Dokumen</th>
+                    <td>
+                        <ul>
+                            <li class="f-flex flex-column">
+                                <a href="" class="d-table-row">Dokumen 1</a>
+                                <small class="text-muted">Print 1x bolak balik</small>
+                            </li>
+                            <li>
+                                <a href="" class="d-table-row">Dokumen 2</a>
+                                <small class="text-muted">Tambahkan cover mika berning </small>
+                            </li>
+                            <li>
+                                <a href="" class="d-table-row">Dokumen 3</a>
+                                <small class="text-muted">Print masing-masing halaman 3x</small>
+                            </li>
+                            <li>
+                                <a href="" class="d-table-row">Dokumen 4</a>
+                                <small class="text-muted">Print landscape</small>
+                            </li>
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Deskripsi</th>
+                    <td>Pesanan saya ambil sekitar jam 16.00</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <form action="#" method="POST">
+            <button type="button" class="btn btn-primary">Terima Pembayaran</button>
+            <button type="button" class="btn btn-outline-danger">Tolak Pembayaran</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="h-100 p-5 text-bg-dark">
+        <h1 class="mb-4">TitiPrint</h1>
+        <div class="d-flex">
+            <p>Copyright &copy; 2021.</p>
+            <img src="" alt="Logo">
+        </div>
+      </p>
+    </footer>
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

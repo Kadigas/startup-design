@@ -1,0 +1,9 @@
+#detail-order-table {
+    width: 75%;
+}
+
+@media only screen and (max-width: 576px) {
+    #detail-order-table {
+        width: 100%;
+    }
+  }
