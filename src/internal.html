@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TitiPrint: Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="../assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+  </head>
+  <body class="bg-dark">
+    <!-- Header -->
+    <header id="header" class="header fixed-top bg-dark mb-4 sticky-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="../assets/img/logo.png" alt="">
+                <span><span class="text-white">Titi</span>Print</span>
+            </a>
+
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="frm text-light my-5">
+        <h1 class="text-center my-5">Login</h1>
+        <div class="d-flex justify-content-center">
+            <form action="admin/daftar-pesanan.html" id="frm-login">
+                <label for="uname" class="labelfrm my-2">Username : </label>
+                <input type="text" name="uname" id="uname" maxlength="10" class="required mb-2" size="50"/>
+                
+                <label for="pass" class="labelfrm my-2">Password : </label>
+                <input type="password" name="pass" id="pass" size="50" class="required mb-2"/>
+                
+                <div class="d-flex justify-content-center my-4">
+                    <label for="submit" class="labelfrm">&nbsp;</label>
+                    <input type="submit" name="Submit" value="Submit" class="btn btn-danger"/>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/startup-design/assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="/startup-design/assets/js/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/startup-design/assets/js/jquery/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/startup-design/assets/js/login.js"></script>
+  </body>
+</html>

@@ -4,53 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>TitiPrint: Order List</title>
 
-    <link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900' rel='stylesheet'>
+
+    <link rel="stylesheet" href="/startup-design/assets/css/vendor/bootstrap.min.css" />
+    <link href="/startup-design/assets/css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="bg-dark">
     <!-- Header -->
-    <div class="h-100 p-5 text-bg-dark">
-      <div class="d-flex align-items-center">
-        <img src="" alt="Logo" />
-        <h2>TitiPrint</h2>
-      </div>
-      <p>
-        Slogan perusahaan
-      </p>
-    </div>
+    <header id="header" class="header fixed-top bg-dark mb-5">
+      <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-light sticky-top">
-      <div class="container-fluid px-5">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav me-auto">
-            <a class="nav-link active fw-semibold" aria-current="page" href="#"
-              >Daftar Pesanan</a
-            >
-            <a class="nav-link" href="#">Profil</a>
-        </div>
-        <div class="navbar-text">
-            <button class="nav-link bg-transparent border-0 ml-auto">Logout</button>
-        </div>
-        </div>
+          <a href="index.html" class="logo d-flex align-items-center">
+              <img src="/startup-design/assets/img/logo.png" alt="">
+              <span><span class="text-white">Titi</span>Print</span>
+          </a>
+
+          <nav id="navbar" class="navbar">
+              <ul>
+                  <li><a class="nav-link scrollto" href="profil.html">Profile</a></li>
+                  <li><a class="nav-link active" href="daftar-pesanan.html">Daftar Pesanan</a></li>
+                  <li><a class="getstarted scrollto rounded-pill" href="/startup-design/src/index.html">Logout</a></li>
+              </ul>
+              <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+          <!-- .navbar -->
       </div>
-    </nav>
+  </header>
 
     <!-- Main Content -->
-    <main class="p-5">
-        <h2>Daftar Pesanan</h2>
+    <main class="p-5 bg-light">
+        <h2 class="mt-5 mb-4 pt-5">Daftar Pesanan</h2>
         <div class="table-responsive">
         <table class="table table-bordered table-hover">
             <thead class="table-dark text-center">
@@ -68,35 +53,35 @@
                 <td>N9TT9G0A</td>
                 <td>Alexandrea Liisu</td>
                 <td><span class="badge bg-danger">Belum bayar</span></td>
-                <td><a class="btn btn-outline-dark" href="./order-detail.html">Lihat detail</a></td>
+                <td><a class="btn btn-outline-dark" href="./detail-pesanan.html">Lihat detail</a></td>
               </tr>
               <tr>
                 <th scope="row">2</th>
                 <td>QK6AJI6S</td>
                 <td>Johannes Gulla</td>
                 <td><span class="badge bg-warning">Mengunggu verfikasi pembayaran</span></td>
-                <td><a class="btn btn-outline-dark" href="./order-detail.html">Lihat detail</a></td>
+                <td><a class="btn btn-outline-dark" href="./detail-pesanan.html">Lihat detail</a></td>
               </tr>
               <tr>
                 <th scope="row">3</th>
                 <td>SXFPCHYK</td>
                 <td>Ward Deneb</td>
                 <td><span class="badge bg-info">Dalam pengerjaan</span></td>
-                <td><a class="btn btn-outline-dark" href="./order-detail.html">Lihat detail</a></td>
+                <td><a class="btn btn-outline-dark" href="./detail-pesanan.html">Lihat detail</a></td>
               </tr>
               <tr>
                 <th scope="row">4</th>
                 <td>XNSSHSJW</td>
                 <td>Emanuel Ferdinand</td>
                 <td><span class="badge bg-primary">Siap diambil</span></td>
-                <td><a class="btn btn-outline-dark" href="./order-detail.html">Lihat detail</a></td>
+                <td><a class="btn btn-outline-dark" href="./detail-pesanan.html">Lihat detail</a></td>
               </tr>
               <tr>
                 <th scope="row">5</th>
                 <td>NHLEL6MI</td>
                 <td>Ivanka Sava</td>
                 <td><span class="badge bg-success">Sudah selesai</span></td>
-                <td><a class="btn btn-outline-dark" href="./order-detail.html">Lihat detail</a></td>
+                <td><a class="btn btn-outline-dark" href="./detail-pesanan.html">Lihat detail</a></td>
               </tr>
             </tbody>
           </table>        
@@ -105,14 +90,13 @@
 
     <!-- Footer -->
     <footer class="h-100 p-5 text-bg-dark">
-        <h1 class="mb-4">TitiPrint</h1>
-        <div class="d-flex">
-            <p>Copyright &copy; 2021.</p>
-            <img src="" alt="Logo">
-        </div>
-      </p>
-    </footer>
+      <h2 class="mb-4">TitiPrint</h1>
+      <div class="d-flex">
+          <p>Copyright &copy; 2022</p>
+      </div>
+    </p>
+  </footer>
 
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/startup-design/assets/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
