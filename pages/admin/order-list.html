@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="h-100 p-5 text-bg-dark">
+      <div class="d-flex align-items-center">
+        <img src="" alt="Logo" />
+        <h2>TitiPrint</h2>
+      </div>
+      <p>
+        Slogan perusahaan
+      </p>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+      <div class="container-fluid px-5">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav me-auto">
+            <a class="nav-link active fw-semibold" aria-current="page" href="#"
+              >Daftar Pesanan</a
+            >
+            <a class="nav-link" href="#">Profil</a>
+        </div>
+        <div class="navbar-text">
+            <button class="nav-link bg-transparent border-0 ml-auto">Logout</button>
+        </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="p-5">
+        <h2>Daftar Pesanan</h2>
+        <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead class="table-dark text-center">
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Kode Pesanan</th>
+                <th scope="col">Nama Pemesan</th>
+                <th scope="col">Status Pesanan</th>
+                <th scope="col">Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>N9TT9G0A</td>
+                <td>Alexandrea Liisu</td>
+                <td><span class="badge bg-danger">Belum bayar</span></td>
+                <td><a class="btn btn-outline-dark" href="./order-detail.html">Lihat detail</a></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>QK6AJI6S</td>
+                <td>Johannes Gulla</td>
+                <td><span class="badge bg-warning">Mengunggu verfikasi pembayaran</span></td>
+                <td><a class="btn btn-outline-dark" href="./order-detail.html">Lihat detail</a></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>SXFPCHYK</td>
+                <td>Ward Deneb</td>
+                <td><span class="badge bg-info">Dalam pengerjaan</span></td>
+                <td><a class="btn btn-outline-dark" href="./order-detail.html">Lihat detail</a></td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>XNSSHSJW</td>
+                <td>Emanuel Ferdinand</td>
+                <td><span class="badge bg-primary">Siap diambil</span></td>
+                <td><a class="btn btn-outline-dark" href="./order-detail.html">Lihat detail</a></td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>NHLEL6MI</td>
+                <td>Ivanka Sava</td>
+                <td><span class="badge bg-success">Sudah selesai</span></td>
+                <td><a class="btn btn-outline-dark" href="./order-detail.html">Lihat detail</a></td>
+              </tr>
+            </tbody>
+          </table>        
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="h-100 p-5 text-bg-dark">
+        <h1 class="mb-4">TitiPrint</h1>
+        <div class="d-flex">
+            <p>Copyright &copy; 2021.</p>
+            <img src="" alt="Logo">
+        </div>
+      </p>
+    </footer>
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
