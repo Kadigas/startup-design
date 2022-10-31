@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TitiPrint</title>
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/css/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="../assets/css/vendor/bootstrap/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/pembayaran.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <a href="/" class="logo d-flex align-items-center">
+          <img src="../assets/img/logo.png" alt="TitiPrint" />
+          <span><span class="text-white">Titi</span>Print</span>
+        </a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="/">Home</a></li>
+            <li><a class="nav-link scrollto" href="/cari">Cek Pesanan</a></li>
+            <li>
+              <a class="nav-link active" href="/pembayaran"
+                >Informasi Pembayaran</a
+              >
+            </li>
+            <li>
+              <a
+                class="getstarted scrollto rounded-pill text-white"
+                href="/pesan"
+                >Pesan Jasa</a
+              >
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Order Section -->
+      <section id="pembayaran" class="py-5">
+        <div class="container">
+          <h1 class="mb-5 fw-bold">Informasi Pembayaran</h1>
+
+          <div class="mb-3">
+            <button
+              type="button"
+              class="btn button-option rounded-0 me-3 border-bottom border-top-0 border-start-0 border-end-0 border-dark"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseQris"
+              aria-expanded="false"
+              aria-controls="collapseQris"
+            >
+              QRIS
+            </button>
+            <button
+              type="button"
+              class="btn button-option rounded-0 me-3 border-bottom border-bottom-0 border-top-0 border-start-0 border-end-0 border-dark"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseBankBCA"
+              aria-expanded="false"
+              aria-controls="collapseBankBCA"
+            >
+              Bank (BCA)
+            </button>
+            <button
+              type="button"
+              class="btn button-option rounded-0 me-3 border-bottom border-bottom-0 border-top-0 border-start-0 border-end-0 border-dark"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseBankMandiri"
+              aria-expanded="false"
+              aria-controls="collapseBankMandiri"
+            >
+              Bank (Mandiri)
+            </button>
+          </div>
+
+          <div class="collapse show" id="collapseQris">
+            <div class="card card-body">
+              <img
+                id="qris"
+                src="../assets/img/qris.png"
+                alt="QRIS"
+                class="img-fluid m-auto"
+              />
+              <small class="text-center mb-4">QRIS TitiPrint</small>
+              <ol>
+                <li>Scan barcode di atas</li>
+                <li>Masukkan nominal uang yang ingin di transfer</li>
+                <li>Pilih "Kirim"</li>
+                <li>Simpan bukti transfer</li>
+                <li>
+                  Cari pesanan anda pada menu
+                  <span class="fw-bold">Cek Pesanan</span>
+                </li>
+                <li>Upload bukti pembayaran</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="collapse" id="collapseBankBCA">
+            <div class="card card-body">
+              <ol>
+                <li>Pilih menu transfer</li>
+                <li>
+                  Masukkan nomer rekening
+                  <span class="fw-bold">8735089123</span>
+                </li>
+                <li>
+                  Masukkan nominal uang yang ingin di transfer melalui ATM BCA.
+                </li>
+                <li>Jika semua proses telah selesai dan benar, pilih “Ya”.</li>
+                <li>Tunggu bukti transfer keluar</li>
+                <li>
+                  Cari pesanan anda pada menu
+                  <span class="fw-bold">Cek Pesanan</span>
+                </li>
+                <li>Upload bukti pembayaran</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="collapse" id="collapseBankMandiri">
+            <div class="card card-body">
+              <ol>
+                <li>Pilih menu transfer</li>
+                <li>
+                  Masukkan nomer rekening
+                  <span class="fw-bold">1370005634738</span>
+                </li>
+                <li>
+                  Masukkan nominal uang yang ingin di transfer melalui ATM BCA.
+                </li>
+                <li>Jika semua proses telah selesai dan benar, pilih “Ya”.</li>
+                <li>Tunggu bukti transfer keluar</li>
+                <li>
+                  Cari pesanan anda pada menu
+                  <span class="fw-bold">Cek Pesanan</span>
+                </li>
+                <li>Upload bukti pembayaran</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-4 p-5 text-white">
+      <div class="container">
+        <a href="/" class="logo d-flex align-items-center mb-4">
+          <img src="../assets/img/logo.png" alt="TitiPrint" class="me-4" />
+          <span><span class="text-white">Titi</span>Print</span>
+        </a>
+        <p>Copyright &copy; 2022. <span class="fw-semibold">TitiPrint</span></p>
+      </div>
+    </footer>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/js/vendor/aos/aos.js"></script>
+    <script src="../assets/js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/vendor/glightbox/glightbox.min.js"></script>
+    <script src="../assets/js/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/vendor/jquery/jquery.min.js"></script>
+
+    <script src="../assets/js/pembayaran.js"></script>
+  </body>
+</html>
