@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TitiPrint</title>
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/css/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="../assets/css/vendor/bootstrap/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/css/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/pesan.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <a href="/" class="logo d-flex align-items-center">
+          <img src="../assets/img/logo.png" alt="TitiPrint" />
+          <span><span class="text-white">Titi</span>Print</span>
+        </a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="/">Home</a></li>
+            <li><a class="nav-link scrollto" href="/cari">Cek Pesanan</a></li>
+            <li>
+              <a class="nav-link scrollto" href="/pembayaran"
+                >Informasi Pembayaran</a
+              >
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Order Section -->
+      <section id="order" class="py-5">
+        <div class="container">
+          <h1 class="mb-5 fw-bold">Pesan Jasa!</h1>
+          <form action="/pembayaran" method="POST" class="row">
+            <div class="col-md-6 mb-3">
+              <label for="name" class="form-label">Nama</label>
+              <input type="email" class="form-control" id="name" />
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="email" class="form-label"
+                >Alamat Email <span class="text-muted">(opsional)</span>
+              </label>
+              <input type="text" class="form-control" id="email" />
+              <small class="text-muted"
+                >Detail pesanan beserta kode unik akan dikirimkan ke email yang
+                dimasukkan</small
+              >
+            </div>
+            <div class="mb-3">
+              <label for="document" class="form-label">Upload Dokumen </label>
+              <input class="form-control" type="file" id="document" multiple />
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">Deskripsi</label>
+              <textarea
+                class="form-control"
+                id="description"
+                name="description"
+                rows="3"
+              ></textarea>
+            </div>
+            <div>
+              <button class="btn px-4 me-2">Kirim</button>
+              <button class="btn px-4">Reset</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-4 p-5 text-white">
+      <div class="container">
+        <a href="/" class="logo d-flex align-items-center mb-4">
+          <img src="../assets/img/logo.png" alt="TitiPrint" class="me-4" />
+          <span><span class="text-white">Titi</span>Print</span>
+        </a>
+        <p>Copyright &copy; 2022. <span class="fw-semibold">TitiPrint</span></p>
+      </div>
+    </footer>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/js/vendor/aos/aos.js"></script>
+    <script src="../assets/js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/vendor/glightbox/glightbox.min.js"></script>
+    <script src="../assets/js/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/pesan.js"></script>
+  </body>
+</html>

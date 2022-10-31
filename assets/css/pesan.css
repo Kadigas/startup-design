@@ -1,0 +1,39 @@
+@import "./components/global.css";
+@import "./components/header.css";
+@import "./components/footer.css";
+
+/* Order Section */
+
+section#order {
+    margin-top: 84px;
+    min-height: calc(100vh - 84px);    
+}
+
+section#order form button:first-of-type {
+    background-color: var(--color-pink);
+    color: var(--color-white);
+}
+
+section#order form button:first-of-type:focus {
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    outline:  2px solid var(--color-pink);
+    outline-offset: 1px;
+}
+
+section#order form button:last-of-type {
+    background-color: transparent;
+    color: var(--color-black);
+    border: 1px solid var(--color-black)
+}
+
+section#order form button:last-of-type:hover {
+    border: none;
+    background-color: var(--color-pink);
+    color: var(--color-white);
+}
+
+section#order form button:last-of-type:focus {
+    outline:  2px solid var(--color-pink);
+    outline-offset: 1px;
+}

@@ -1,0 +1,22 @@
+/* Footer */
+footer {
+    background-color: var(--color-black);
+}
+
+
+footer .logo img {
+    max-height: 3rem;;
+    margin-right: 6px;
+}
+
+footer .logo span {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--color-pink);
+    font-family: "Montserrat", sans-serif;
+}
+
+footer p span {
+    color: var(--color-pink);
+}

@@ -1,0 +1,48 @@
+:root {
+    scroll-behavior: smooth;
+    
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-pink: #F0007E;
+    --color-gray: #444444;
+    --color-indigo: #717FF5
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Font */
+
+a {
+    color: var(--color-pink);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-indigo);
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Section */
+
+section {
+    min-height: 100vh;
+}
+
+section h2 {
+    font-size: 2.5rem;
+}
+
+section h2 span {
+    color: var(--color-pink);
+}
