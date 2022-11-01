@@ -10,6 +10,7 @@ $(document).ready(function() {
         },
         messages: {
             email: {
+                email: "Masukkan format email dengan benar.",
                 required: "Masukkan email."
             },
             message: {
