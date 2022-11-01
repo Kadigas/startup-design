@@ -59,8 +59,8 @@
               <tr>
                 <th scope="row">Status Pesanan</th>
                 <td>
-                  <span class="badge bg-warning"
-                    >Mengunggu verfikasi pembayaran</span
+                  <span id="badge-status" class="badge bg-danger"
+                    >Belum bayar</span
                   >
                 </td>
               </tr>
@@ -203,18 +203,15 @@
           </table>
         </div>
 
-        <div class="mb-5">
+        <div id="payment-proof" class="mb-5">
           <h3 class="fw-bold">Bukti Pembayaran</h3>
-          <p class="fst-italic fw-semibold text-danger">Belum membayar</p>
+          <p id="payment-status" class="fst-italic fw-semibold text-danger">
+            Belum membayar
+          </p>
         </div>
       </div>
 
-      <form action="#" method="POST">
-        <button type="button" class="btn btn-primary">Terima Pembayaran</button>
-        <button type="button" class="btn btn-outline-danger">
-          Tolak Pembayaran
-        </button>
-      </form>
+      <!-- Form Confirmation -->
     </main>
 
     <!-- Footer -->
@@ -229,5 +226,8 @@
     </footer>
 
     <script src="../../assets/js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/vendor/jquery/jquery.min.js"></script>
+
+    <script src="../../assets/js/admin-order-detail.js"></script>
   </body>
 </html>
