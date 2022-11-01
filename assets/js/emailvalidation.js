@@ -2,8 +2,7 @@ $(document).ready(function() {
     $('#cntct').validate({
         rules: {
             email : {
-              email: true,
-              accept:"[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}"
+              email: true
             },
             message: {
                 required: true
