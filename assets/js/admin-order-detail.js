@@ -8,7 +8,7 @@ $(document).ready(function () {
     // Show payment proof image
     const paymentProofTag = `
     <img
-        src="../../assets/img/payment.jpg"
+        src="../../../../assets/img/payment.jpg"
         alt="Bukti Pembayaran"
         class="img-fluid img-thumbnail"
     />`;
