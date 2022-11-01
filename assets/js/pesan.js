@@ -39,6 +39,7 @@ $(document).ready(function () {
                     </div>
                     <div class="col-auto">
                     <input
+                        value=0
                         type="number"
                         id="totalPrintMonokrom"
                         class="form-control totalPrintMonokrom"
@@ -53,6 +54,7 @@ $(document).ready(function () {
                     </div>
                     <div class="col-auto">
                     <input
+                        value=0
                         type="number"
                         id="totalPrintColor"
                         class="form-control totalPrintColor"
