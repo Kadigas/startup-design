@@ -66,10 +66,15 @@
       <section id="order" class="py-5">
         <div class="container">
           <h1 class="mb-5 fw-bold">Pesan Jasa!</h1>
-          <form action="/pembayaran" method="POST" class="row">
+          <form
+            id="formOrder"
+            action="/pembayaran.html"
+            method="POST"
+            class="row"
+          >
             <div class="col-md-6 mb-3">
               <label for="name" class="form-label">Nama</label>
-              <input type="email" class="form-control" id="name" />
+              <input type="text" class="form-control" id="name" />
             </div>
             <div class="col-md-6 mb-3">
               <label for="email" class="form-label"
@@ -163,8 +168,22 @@
               <h4>Total harga: <span class="totalPrice">Rp 0,00</span></h4>
             </div>
             <div>
-              <button type="submit" class="btn px-4 me-2">Kirim</button>
-              <button type="button" class="btn px-4">Reset</button>
+              <button
+                type="button"
+                class="btn px-4 me-2"
+                data-bs-toggle="modal"
+                data-bs-target="#sendConfirmationModal"
+              >
+                Kirim
+              </button>
+              <button
+                type="button"
+                class="btn px-4"
+                data-bs-toggle="modal"
+                data-bs-target="#resetConfirmationModal"
+              >
+                Reset
+              </button>
             </div>
           </form>
         </div>
@@ -181,6 +200,65 @@
         <p>Copyright &copy; 2022. <span class="fw-semibold">TitiPrint</span></p>
       </div>
     </footer>
+
+    <!-- Modal Send -->
+    <div
+      class="modal fade"
+      id="sendConfirmationModal"
+      tabindex="-1"
+      aria-labelledby="sendConfirmationModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body pt-4 px-4">
+            <h4>Anda yakin sudah mengisi form dengan benar?</h4>
+            <small
+              >Semua isian input akan terkirim ke sistem jika anda
+              melanjutkan</small
+            >
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-dark"
+              data-bs-dismiss="modal"
+            >
+              Batal
+            </button>
+            <button type="button" class="btn buttonSend">Kirim</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Reset -->
+    <div
+      class="modal fade"
+      id="resetConfirmationModal"
+      tabindex="-1"
+      aria-labelledby="resetConfirmationModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body pt-4 px-4">
+            <h4>Anda yakin ingin mereset form?</h4>
+            <small>Semua isian input akan terhapus jika anda reset</small>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-dark"
+              data-bs-dismiss="modal"
+            >
+              Batal
+            </button>
+            <button type="button" class="btn buttonReset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Vendor JS Files -->
     <script src="../assets/js/vendor/aos/aos.js"></script>

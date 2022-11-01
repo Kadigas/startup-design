@@ -9,12 +9,16 @@ section#order {
     min-height: calc(100vh - 84px);    
 }
 
-section#order form button:first-of-type {
+section#order form button:first-of-type,
+div.modal button.buttonReset,
+div.modal button.buttonSend {
     background-color: var(--color-pink);
     color: var(--color-white);
 }
 
-section#order form button:first-of-type:focus {
+section#order form button:first-of-type:focus,
+div.modal button.buttonReset:focus,
+div.modal button.buttonSend:focus {
     background-color: var(--color-pink);
     color: var(--color-white);
     outline:  2px solid var(--color-pink);

@@ -67,6 +67,10 @@ $(document).ready(function () {
     documentCounterTag.innerHTML = parseInt(documentCounterTag.innerHTML) + 1;
   });
 
+  $(".buttonSend").on("click", function () {
+    $("#formOrder").submit();
+  });
+
   $(document).on("click", ".btn-close", function () {
     if ($(".btn-close").length == 1) return;
 
@@ -85,6 +89,10 @@ $(document).ready(function () {
       updateTotalPrice();
     }
   );
+
+  $(".buttonReset").on("click", function () {
+    if (prompt()) document.getElementById("formOrder").reset();
+  });
 
   function getTotalPrice() {
     let totalPrintMonokrom = 0;
