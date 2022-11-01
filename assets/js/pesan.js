@@ -119,4 +119,40 @@ $(document).ready(function () {
       currency: "IDR",
     }).format(totalPrice);
   }
+  $("#formOrder").validate({
+    rules: {
+      name: {
+        required: true,
+      },
+      email: {
+        email: true,
+      },
+      document: {
+        required: true,
+      },
+      totalPrintMonokrom: {
+        min: 0,
+      },
+      totalPrintColor: {
+        min: 0,
+      },
+    },
+    messages: {
+      name: {
+        required: "Nama tidak boleh kosong!",
+      },
+      email: {
+        email: "Format email tidak valid!",
+      },
+      document: {
+        required: "Dokumen tidak boleh kosong!",
+      },
+      totalPrintMonokrom: {
+        min: "Jumlah kertas minimal 0",
+      },
+      totalPrintColor: {
+        min: "Jumlah kertas minimal 0",
+      },
+    },
+  });
 });

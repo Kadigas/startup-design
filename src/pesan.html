@@ -74,17 +74,24 @@
           >
             <div class="col-md-6 mb-3">
               <label for="name" class="form-label">Nama</label>
-              <input type="text" class="form-control" id="name" />
+              <input type="text" class="form-control" id="name" name="name" />
             </div>
             <div class="col-md-6 mb-3">
               <label for="email" class="form-label"
                 >Alamat Email <span class="text-muted">(opsional)</span>
               </label>
-              <input type="text" class="form-control" id="email" />
-              <small class="text-muted"
-                >Detail pesanan beserta kode unik akan dikirimkan ke email yang
-                dimasukkan</small
-              >
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+              />
+              <div>
+                <small class="text-muted inline"
+                  >Detail pesanan beserta kode unik akan dikirimkan ke email
+                  yang dimasukkan</small
+                >
+              </div>
             </div>
             <div id="files">
               <div class="d-flex flex-column">
@@ -102,8 +109,8 @@
                     <input
                       class="form-control"
                       type="file"
-                      id="document1"
-                      name="document1"
+                      id="document"
+                      name="document"
                     />
                   </div>
                   <div class="input-group mb-2 input-group-sm">
@@ -126,8 +133,11 @@
                       </div>
                       <div class="col-auto">
                         <input
+                          min="0"
+                          value="0"
                           type="number"
                           id="totalPrintMonokrom"
+                          name="totalPrintMonokrom"
                           class="form-control totalPrintMonokrom"
                         />
                       </div>
@@ -140,8 +150,11 @@
                       </div>
                       <div class="col-auto">
                         <input
+                          min="0"
+                          value="0"
                           type="number"
                           id="totalPrintColor"
+                          name="totalPrintColor"
                           class="form-control totalPrintColor"
                         />
                       </div>
@@ -266,6 +279,7 @@
     <script src="../assets/js/vendor/glightbox/glightbox.min.js"></script>
     <script src="../assets/js/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="../assets/js/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/js/vendor/jquery/jquery.validate.min.js"></script>
 
     <!-- Template Main JS File -->
     <script src="../assets/js/pesan.js"></script>

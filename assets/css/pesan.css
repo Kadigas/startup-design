@@ -45,3 +45,7 @@ section#order form button:last-of-type:focus {
 section#order button#button-add-file {
     border: 1px dashed var(--color-black);
 }
+
+section#order label.error {
+    color: #FF0000;
+}
