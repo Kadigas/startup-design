@@ -30,6 +30,7 @@
 
     <!-- Template Main CSS File -->
     <link href="../assets/css/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/login.css">
   </head>
 
   <body>
@@ -188,29 +189,31 @@
       <section id="contact" class="py-5 d-flex align-items-center">
         <div class="container">
           <h2 class="text-center fw-bold mb-5">Butuh bantuan? Kontak kami!</h2>
-          <form action="/" method="POST">
+          <form action="index.html" id="cntct">
             <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"
+              <label for="email" class="form-label"
                 >Alamat Email</label
               >
               <input
                 type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
+                class="form-control required"
+                name="email"
+                id="email"
                 placeholder=""
               />
             </div>
             <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label"
+              <label for="message" class="form-label"
                 >Pesan</label
               >
               <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
+                class="form-control required"
+                name="message"
+                id="message"
                 rows="3"
               ></textarea>
             </div>
-            <button type="button" class="btn fw-semibold px-4">Kirim</button>
+            <input type="submit" value="Kirim" class="btn fw-semibold px-4 btn btn-primary"/>
           </form>
         </div>
       </section>
@@ -235,5 +238,8 @@
 
     <!-- Template Main JS File -->
     <script src="../assets/js/index.js"></script>
+    <script type="text/javascript" src="../assets/js/vendor/jquery/jquery.min.js"></script>
+	  <script type="text/javascript" src="../assets/js/vendor/jquery/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="../assets/js/emailvalidation.js"></script>
   </body>
 </html>
