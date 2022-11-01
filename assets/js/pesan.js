@@ -99,11 +99,11 @@ $(document).ready(function () {
     let totalPrintColor = 0;
 
     $(".totalPrintMonokrom").each(function () {
-      totalPrintMonokrom += this.value;
+      totalPrintMonokrom += parseInt(this.value);
     });
 
     $(".totalPrintColor").each(function () {
-      totalPrintMonokrom += this.value;
+      totalPrintMonokrom += parseInt(this.value);
     });
 
     const totalPrice = totalPrintMonokrom * 500 + totalPrintColor * 1000;
