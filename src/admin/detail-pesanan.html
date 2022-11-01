@@ -6,98 +6,222 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TitiPrint: Order Detail</title>
 
-    <link rel="stylesheet" href="../../assets/css/vendor/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="../../assets/css/admin-order-detail.css">
-    <link href="../../assets/css/index.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="../../assets/css/vendor/bootstrap/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/css/admin-order-detail.css" />
+    <link href="../../assets/css/index.css" rel="stylesheet" />
   </head>
-  <body class="bg-dark">
+  <body>
     <!-- Header -->
-    <header id="header" class="header fixed-top bg-dark mb-5">
-      <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    <header id="header" class="header fixed-top mb-5">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <a href="../index.html" class="logo d-flex align-items-center">
+          <img src="../../assets/img/logo.png" alt="" />
+          <span><span class="text-white">Titi</span>Print</span>
+        </a>
 
-          <a href="../index.html" class="logo d-flex align-items-center">
-              <img src="../../assets/img/logo.png" alt="">
-              <span><span class="text-white">Titi</span>Print</span>
-          </a>
-
-          <nav id="navbar" class="navbar">
-              <ul>
-                  <li><a class="nav-link scrollto" href="profil.html">Profile</a></li>
-                  <li><a class="nav-link active" href="daftar-pesanan.html">Daftar Pesanan</a></li>
-                  <li><a class="getstarted scrollto rounded-pill" href="../index.html">Logout</a></li>
-              </ul>
-              <i class="bi bi-list mobile-nav-toggle"></i>
-          </nav>
-          <!-- .navbar -->
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="profil.html">Profile</a></li>
+            <li>
+              <a class="nav-link active" href="daftar-pesanan.html"
+                >Daftar Pesanan</a
+              >
+            </li>
+            <li>
+              <a class="getstarted scrollto rounded-pill" href="../index.html"
+                >Logout</a
+              >
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
       </div>
-  </header>
-
+    </header>
 
     <!-- Main Content -->
-    <main class="p-5 bg-light mx-5">
-        <h2 class="my-5 pt-3">Detail Pesanan</h2>
+    <main class="p-5 bg-light">
+      <h2 class="my-5 pt-3">Detail Pesanan</h2>
 
-        <div id="detail-order-table" class="table-responsive">
-            <table class="table table-borderless">
-                <tbody>
-                  <tr>
-                    <th scope="row">Kode Pesanan</th>
-                    <td>QK6AJI6S</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Status Pesanan</th>
-                    <td><span class="badge bg-warning">Mengunggu verfikasi pembayaran</span></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Nama Pemesan</th>
-                    <td>Johannes Gulla</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Total Harga</th>
-                    <td>Rp 15.000,00</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Dokumen</th>
-                    <td>
-                        <ul>
-                            <li class="f-flex flex-column">
-                                <a href="" class="d-table-row">Dokumen 1</a>
-                                <small class="text-muted">Print 1x bolak balik</small>
-                            </li>
-                            <li>
-                                <a href="" class="d-table-row">Dokumen 2</a>
-                                <small class="text-muted">Tambahkan cover mika berning </small>
-                            </li>
-                            <li>
-                                <a href="" class="d-table-row">Dokumen 3</a>
-                                <small class="text-muted">Print masing-masing halaman 3x</small>
-                            </li>
-                            <li>
-                                <a href="" class="d-table-row">Dokumen 4</a>
-                                <small class="text-muted">Print landscape</small>
-                            </li>
-                        </ul>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Deskripsi</th>
-                    <td>Pesanan saya ambil sekitar jam 16.00</td>
-                  </tr>
-                </tbody>
-            </table>
+      <div id="detail-order-table" class="d-flex">
+        <div class="table-responsive mb-5">
+          <table class="table table-borderless">
+            <tbody>
+              <tr>
+                <th scope="row">Kode Pesanan</th>
+                <td>QK6AJI6S</td>
+              </tr>
+              <tr>
+                <th scope="row">Status Pesanan</th>
+                <td>
+                  <span class="badge bg-warning"
+                    >Mengunggu verfikasi pembayaran</span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Nama Pemesan</th>
+                <td>Johannes Gulla</td>
+              </tr>
+              <tr>
+                <th scope="row">Alamat Email</th>
+                <td>johannes@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">Total Harga</th>
+                <td>Rp 15.000,00</td>
+              </tr>
+              <tr>
+                <th scope="row">Dokumen</th>
+                <td>
+                  <ol class="list-group list-group-numbered">
+                    <li
+                      class="list-group-item d-flex bg-transparent border-0 justify-content-between align-items-start"
+                    >
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">
+                          <a href="" class="text-decoration-underline"
+                            >Dokumen 1</a
+                          >
+                        </div>
+                        <div class="mb-2">
+                          <span
+                            class="btn btn-success position-relative me-3 mb-2"
+                          >
+                            Hitam putih
+                            <span class="badge rounded-pill bg-secondary">
+                              2
+                            </span>
+                          </span>
+                          <span class="btn btn-primary position-relative mb-2">
+                            Berwarna
+                            <span class="badge rounded-pill bg-danger">
+                              1
+                            </span>
+                          </span>
+                        </div>
+                        <p>Keterangan: Print bolak-balik</p>
+                      </div>
+                    </li>
+                    <li
+                      class="list-group-item d-flex bg-transparent border-0 justify-content-between align-items-start"
+                    >
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">
+                          <a href="" class="text-decoration-underline"
+                            >Dokumen 2</a
+                          >
+                        </div>
+                        <div class="mb-2">
+                          <span
+                            class="btn btn-success position-relative me-3 mb-2"
+                          >
+                            Hitam putih
+                            <span class="badge rounded-pill bg-secondary">
+                              4
+                            </span>
+                          </span>
+                          <span class="btn btn-primary position-relative mb-2">
+                            Berwarna
+                            <span class="badge rounded-pill bg-danger">
+                              0
+                            </span>
+                          </span>
+                        </div>
+                        <p>Keterangan: Tambahkan cover mika bening</p>
+                      </div>
+                    </li>
+                    <li
+                      class="list-group-item d-flex bg-transparent border-0 justify-content-between align-items-start"
+                    >
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">
+                          <a href="" class="text-decoration-underline"
+                            >Dokumen 3</a
+                          >
+                        </div>
+                        <div class="mb-2">
+                          <span
+                            class="btn btn-success position-relative me-3 mb-2"
+                          >
+                            Hitam putih
+                            <span class="badge rounded-pill bg-secondary">
+                              0
+                            </span>
+                          </span>
+                          <span class="btn btn-primary position-relative mb-2">
+                            Berwarna
+                            <span class="badge rounded-pill bg-danger">
+                              5
+                            </span>
+                          </span>
+                        </div>
+                        <p>Keterangan: -</p>
+                      </div>
+                    </li>
+                    <li
+                      class="list-group-item d-flex bg-transparent border-0 justify-content-between align-items-start"
+                    >
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">
+                          <a href="" class="text-decoration-underline"
+                            >Dokumen 4</a
+                          >
+                        </div>
+                        <div class="mb-2">
+                          <span
+                            class="btn btn-success position-relative me-3 mb-2"
+                          >
+                            Hitam putih
+                            <span class="badge rounded-pill bg-secondary">
+                              0
+                            </span>
+                          </span>
+                          <span class="btn btn-primary position-relative mb-2">
+                            Berwarna
+                            <span class="badge rounded-pill bg-danger">
+                              3
+                            </span>
+                          </span>
+                        </div>
+                        <p>Keterangan: Print landscape</p>
+                      </div>
+                    </li>
+                  </ol>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Deskripsi</th>
+                <td>Pesanan saya ambil sekitar jam 16.00</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        
-        <form action="#" method="POST">
-            <button type="button" class="btn btn-primary">Terima Pembayaran</button>
-            <button type="button" class="btn btn-outline-danger">Tolak Pembayaran</button>
-        </form>
+
+        <div class="mb-5">
+          <h3 class="fw-bold">Bukti Pembayaran</h3>
+          <p class="fst-italic fw-semibold text-danger">Belum membayar</p>
+        </div>
+      </div>
+
+      <form action="#" method="POST">
+        <button type="button" class="btn btn-primary">Terima Pembayaran</button>
+        <button type="button" class="btn btn-outline-danger">
+          Tolak Pembayaran
+        </button>
+      </form>
     </main>
 
     <!-- Footer -->
-    <footer class="p-5 text-white bg-dark">
+    <footer class="mt-4 p-5 text-white">
       <div class="container">
-        <a href="index.html" class="logo d-flex align-items-center mb-4">
-            <img src="../../assets/img/logo.png" alt="TitiPrint" class="me-4"/>
+        <a href="/" class="logo d-flex align-items-center mb-4">
+          <img src="../../assets/img/logo.png" alt="TitiPrint" class="me-4" />
           <span><span class="text-white">Titi</span>Print</span>
         </a>
         <p>Copyright &copy; 2022. <span class="fw-semibold">TitiPrint</span></p>

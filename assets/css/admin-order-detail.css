@@ -1,9 +1,18 @@
-#detail-order-table {
-    width: 75%;
+@import "./components/global.css";
+@import "./components/header.css";
+@import "./components/footer.css";
+
+div#detail-order-table div:first-of-type {
+    flex: 6;
 }
 
-@media only screen and (max-width: 576px) {
-    #detail-order-table {
-        width: 100%;
+div#detail-order-table div:last-of-type {
+    flex: 4;
+}
+
+/* Medium Breakpoint */
+@media only screen and (max-width: 992px) {
+    div#detail-order-table {
+        display: inline-block !important;
     }
-  }
+}
