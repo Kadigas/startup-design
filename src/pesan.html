@@ -46,7 +46,9 @@
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-            <li><a class="nav-link scrollto" href="cari.html">Cek Pesanan</a></li>
+            <li>
+              <a class="nav-link scrollto" href="cari.html">Cek Pesanan</a>
+            </li>
             <li>
               <a class="nav-link scrollto" href="pembayaran.html"
                 >Informasi Pembayaran</a
@@ -79,9 +81,74 @@
                 dimasukkan</small
               >
             </div>
-            <div class="mb-3">
-              <label for="document" class="form-label">Upload Dokumen </label>
-              <input class="form-control" type="file" id="document" multiple />
+            <div id="files">
+              <div class="d-flex flex-column">
+                <label class="form-label">Upload Dokumen </label>
+                <small
+                  >Total Dokumen: <span class="document-counter">1</span></small
+                >
+              </div>
+              <div class="card mb-3">
+                <div class="card-body">
+                  <div class="mb-2">
+                    <div class="d-flex mb-2 justify-content-end">
+                      <button type="button" class="btn-close"></button>
+                    </div>
+                    <input
+                      class="form-control"
+                      type="file"
+                      id="document1"
+                      name="document1"
+                    />
+                  </div>
+                  <div class="input-group mb-2 input-group-sm">
+                    <span class="input-group-text" id="inputGroup-sizing-sm"
+                      >Beri keterangan</span
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-sm"
+                    />
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 row">
+                      <div class="col-auto">
+                        <label for="totalPrintMonokrom" class="col-form-label"
+                          >Jumlah print hitam putih (lembar)</label
+                        >
+                      </div>
+                      <div class="col-auto">
+                        <input
+                          type="number"
+                          id="totalPrintMonokrom"
+                          class="form-control totalPrintMonokrom"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 row">
+                      <div class="col-auto">
+                        <label for="totalPrintColor" class="col-form-label"
+                          >Jumlah print berwarna (lembar)</label
+                        >
+                      </div>
+                      <div class="col-auto">
+                        <input
+                          type="number"
+                          id="totalPrintColor"
+                          class="form-control totalPrintColor"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button type="button" id="button-add-file" class="btn w-100 mb-3">
+                +
+              </button>
             </div>
             <div class="mb-3">
               <label for="description" class="form-label">Deskripsi</label>
@@ -92,9 +159,12 @@
                 rows="3"
               ></textarea>
             </div>
+            <div class="mb-3">
+              <h4>Total harga: <span class="totalPrice">Rp 0,00</span></h4>
+            </div>
             <div>
-              <button class="btn px-4 me-2">Kirim</button>
-              <button class="btn px-4">Reset</button>
+              <button type="submit" class="btn px-4 me-2">Kirim</button>
+              <button type="button" class="btn px-4">Reset</button>
             </div>
           </form>
         </div>
@@ -117,6 +187,7 @@
     <script src="../assets/js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/vendor/glightbox/glightbox.min.js"></script>
     <script src="../assets/js/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/vendor/jquery/jquery.min.js"></script>
 
     <!-- Template Main JS File -->
     <script src="../assets/js/pesan.js"></script>

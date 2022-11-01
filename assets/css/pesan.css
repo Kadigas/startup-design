@@ -37,3 +37,7 @@ section#order form button:last-of-type:focus {
     outline:  2px solid var(--color-pink);
     outline-offset: 1px;
 }
+
+section#order button#button-add-file {
+    border: 1px dashed var(--color-black);
+}
