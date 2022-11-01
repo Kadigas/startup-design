@@ -97,7 +97,7 @@ $(document).ready(function () {
 
   // Reset form buton on click
   $(".buttonReset").on("click", function () {
-    if (prompt()) document.getElementById("formOrder").reset();
+    document.getElementById("formOrder").reset();
   });
 
   // Get total price based on monokrom and color total print paper
