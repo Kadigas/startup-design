@@ -1,5 +1,7 @@
 $(document).ready(function () {
   let documentCounter = 1;
+
+  // Add document section
   $("#button-add-file").click(function (e) {
     documentCounter++;
 
@@ -13,8 +15,8 @@ $(document).ready(function () {
                 <input
                     class="form-control"
                     type="file"
-                    id="document${documentCounter}"
-                    name="document${documentCounter}"
+                    id="document"
+                    name="document"
                 />
             </div>
             <div class="input-group mb-2 input-group-sm">
@@ -67,10 +69,12 @@ $(document).ready(function () {
     documentCounterTag.innerHTML = parseInt(documentCounterTag.innerHTML) + 1;
   });
 
+  // Submit form
   $(".buttonSend").on("click", function () {
     $("#formOrder").submit();
   });
 
+  // Remove document section
   $(document).on("click", ".btn-close", function () {
     if ($(".btn-close").length == 1) return;
 
@@ -82,6 +86,7 @@ $(document).ready(function () {
     updateTotalPrice();
   });
 
+  // Update total price on change of monokrom or color total print paper
   $(document).on(
     "change",
     ".totalPrintColor, .totalPrintMonokrom",
@@ -90,10 +95,12 @@ $(document).ready(function () {
     }
   );
 
+  // Reset form buton on click
   $(".buttonReset").on("click", function () {
     if (prompt()) document.getElementById("formOrder").reset();
   });
 
+  // Get total price based on monokrom and color total print paper
   function getTotalPrice() {
     let totalPrintMonokrom = 0;
     let totalPrintColor = 0;
@@ -111,6 +118,7 @@ $(document).ready(function () {
     return totalPrice;
   }
 
+  // Update total price based on monokrom and color total print paper
   function updateTotalPrice() {
     const totalPrice = getTotalPrice();
 
@@ -119,6 +127,8 @@ $(document).ready(function () {
       currency: "IDR",
     }).format(totalPrice);
   }
+
+  // Validate form
   $("#formOrder").validate({
     rules: {
       name: {
