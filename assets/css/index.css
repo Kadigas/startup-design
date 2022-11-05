@@ -82,6 +82,12 @@ section.hero .hero-img {
     text-align: right;
 }
 
+@media only screen and (max-width: 576px) {
+    section.hero .cta-buttons a:first-of-type {
+        margin-right: 0 !important;
+    }
+}
+
 
 /* About Us Section */
 
