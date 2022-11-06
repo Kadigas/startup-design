@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TitiPrint</title>
+
+    <!-- Favicons -->
+    <link href="/assets/img/favicon.png" rel="icon" />
+    <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="/assets/css/vendor/bootstrap/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/assets/css/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="/assets/css/riwayat-pemesanan.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="header fixed-top">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <a href="/" class="logo d-flex align-items-center">
+          <img src="/assets/img/logo.png" alt="TitiPrint" />
+          <span><span class="text-white">Titi</span>Print</span>
+        </a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="/">Home</a></li>
+            <li><a class="nav-link active" href="/cari">Cek Pesanan</a></li>
+            <li>
+              <a class="nav-link scrollto" href="/pembayaran"
+                >Informasi Pembayaran</a
+              >
+            </li>
+            <li>
+              <a
+                class="getstarted scrollto rounded-pill text-white"
+                href="/pesan"
+                >Pesan Jasa</a
+              >
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section id="order-history" class="container py-5">
+        <h1 class="fw-bold mb-5">Riwayat Pemesanan</h1>
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover">
+            <thead class="table-dark text-center">
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Kode Pesanan</th>
+                <th scope="col">Nama Pemesan</th>
+                <th scope="col">Status Pesanan</th>
+                <th scope="col">Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>QK6AJI6S</td>
+                <td>Johannes Gulla</td>
+
+                <td><span class="badge bg-danger">Belum bayar</span></td>
+                <td class="text-center">
+                  <a
+                    class="btn btn-outline-dark"
+                    href="/admin/detail-pesanan/QK6AJI6S"
+                    >Lihat detail</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>N9TT9G0A</td>
+                <td>Alexandrea Liisu</td>
+                <td>
+                  <span class="badge bg-warning"
+                    >Mengunggu verfikasi pembayaran</span
+                  >
+                </td>
+                <td class="text-center">
+                  <a class="btn btn-outline-dark" href="/admin/detail-pesanan"
+                    >Lihat detail</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>SXFPCHYK</td>
+                <td>Ward Deneb</td>
+                <td><span class="badge bg-info">Dalam pengerjaan</span></td>
+                <td class="text-center">
+                  <a class="btn btn-outline-dark" href="/admin/detail-pesanan"
+                    >Lihat detail</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>XNSSHSJW</td>
+                <td>Emanuel Ferdinand</td>
+                <td><span class="badge bg-primary">Siap diambil</span></td>
+                <td class="text-center">
+                  <a class="btn btn-outline-dark" href="/admin/detail-pesanan"
+                    >Lihat detail</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>NHLEL6MI</td>
+                <td>Ivanka Sava</td>
+                <td><span class="badge bg-success">Sudah selesai</span></td>
+                <td class="text-center">
+                  <a class="btn btn-outline-dark" href="/admin/detail-pesanan"
+                    >Lihat detail</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-5 text-white">
+      <div class="container">
+        <a href="/" class="logo d-flex align-items-center mb-4">
+          <img src="/assets/img/logo.png" alt="TitiPrint" class="me-4" />
+          <span><span class="text-white">Titi</span>Print</span>
+        </a>
+        <p>Copyright &copy; 2022. <span class="fw-semibold">TitiPrint</span></p>
+      </div>
+    </footer>
+  </body>
+</html>

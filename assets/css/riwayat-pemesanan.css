@@ -1,0 +1,10 @@
+@import "./components/global.css";
+@import "./components/header.css";
+@import "./components/footer.css";
+
+/* Main Content */
+
+main {
+    margin-top: 84px;
+    min-height: calc(100vh - 84px);    
+}
