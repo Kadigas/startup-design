@@ -140,6 +140,13 @@ section#flow .horizontal-timeline .items .items-list .event-date {
     font-size: 0.9rem;
 }
 
+/* Store Information Section */
+
+section#store {
+    min-height: fit-content;
+    background-color: var(--color-pink);
+}
+
 /* Contact Us Section */
 section#contact button {
     background-color: var(--color-pink);
