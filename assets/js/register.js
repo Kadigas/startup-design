@@ -19,10 +19,13 @@ $(document).ready(function() {
             password: {
                 required: true,
                 minlength: 8
+            },
+            password2: {
+                equalTo: "#password"
             }
         },
         messages: {
-            namaDepan : {
+            namaDepan: {
                 required: "Nama depan tidak boleh kosong!"
             },
             namaBelakang: {
@@ -40,6 +43,9 @@ $(document).ready(function() {
             password: {
                 required: "Kata sandi tidak boleh dikosongi!",
                 minlength: "Kata sandi harus lebih dari 8 karakter!"
+            },
+            password2: {
+                equalTo: "Kata sandi tidak sama."
             }
         }
     });
