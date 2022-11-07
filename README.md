@@ -14,4 +14,4 @@ Yang menjadi masalah, alur ini biasa diimplementasikan melalui Email atau WhatsA
 Proposed Solution:
 Oleh karena permasalahan di atas, kami mengusulkan aplikasi web TitiPrint yang menyediakan sistem pemesanan efisien antara pihak customer dengan suatu mitra UMKM Digital Printing dan Fotocopy. Pada website yang kami buat, diasumsikan bahwa terdapat satu pusat Digital Printing dan Fotocopy yang melayani banyak customer. Dengan adanya TitiPrint, diharapkan customer akan lebih terdorong untuk melakukan pesanan secara online di tempat Digital Printing dan Fotocopy, dan pihak mitra pun akan lebih mudah untuk mengelola pesanan-pesanan tersebut.
 
-<a href="http://titiprint.xyz/"> Link Website </a>
+<a href="https://titiprint.xyz/"> Link Website </a>
