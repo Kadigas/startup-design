@@ -28,12 +28,12 @@
 
         <nav id="navbar" class="navbar">
           <ul>
-            <li>
-              <li>
-                <a class="btn-secondary-cta ms-3 scrollto d-inline-flex align-items-center justify-content-center align-self-center rounded-pill" href="/register"
-                  >Register</a
+             <li>
+                <a class="btn-secondary-cta ms-3 scrollto d-inline-flex align-items-center justify-content-center align-self-center rounded-pill" href="/masuk"
+                  >Masuk</a
                 >
               </li>
+            <li>
               <a class="getstarted scrollto rounded-pill" href="/"
                 >Back</a
               >
@@ -46,8 +46,27 @@
 
     <!-- Main Content -->
     <div class="container frm text-light my-5">
-      <h1 class="text-center my-5">Masuk Akun</h1>
-      <form action="/riwayat-pemesanan" id="frm-login">
+      <h1 class="text-center my-5">Registrasi Akun</h1>
+      <form action="/masuk" id="frm-login">
+        <div class="mb-3">
+          <div class="d-flex justify-content-around">
+            <label for="namaDepan" class="form-label">Nama Depan</label>
+            <input
+            type="text"
+            class="form-control required mx-2"
+            id="namaDepan"
+            name="namaDepan"
+            />
+            <label for="namaBelakang" class="form-label">Nama Belakang</label>
+            <input
+            type="text"
+            class="form-control required mx-2"
+            id="namaBelakang"
+            name="namaBelakang"
+            />
+          </div>
+        </div>
+
         <div class="mb-3">
           <label for="username" class="form-label">Nama Pengguna</label>
           <input
@@ -55,6 +74,7 @@
             class="form-control required"
             id="username"
             name="username"
+            size="50"
           />
         </div>
 
@@ -65,6 +85,7 @@
             class="form-control required"
             id="password"
             name="password"
+            size="50"
           />
         </div>
 
