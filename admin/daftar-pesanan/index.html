@@ -1,74 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TitiPrint: Order List</title>
 
-    <link
-      rel="stylesheet"
-      href="/assets/css/vendor/bootstrap/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="/assets/css/vendor/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="/assets/css/admin-daftar-pesanan.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Header -->
     <header id="header" class="header fixed-top mb-5">
-      <div
-        class="container-fluid container-xl d-flex align-items-center justify-content-between"
-      >
-        <a href="/" class="logo d-flex align-items-center">
-          <img src="/assets/img/logo.png" alt="" />
-          <span><span class="text-white">Titi</span>Print</span>
-        </a>
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+            <a href="/" class="logo d-flex align-items-center">
+                <img src="/assets/img/logo.png" alt="" />
+                <span><span class="text-white">Titi</span>Print</span>
+            </a>
 
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li>
-              <a class="nav-link scrollto" href="/admin/profil">Profile</a>
-            </li>
-            <li>
-              <a class="nav-link active" href="/admin/daftar-pesanan"
-                >Daftar Pesanan</a
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li>
+                        <a class="nav-link scrollto" href="/admin/profil">Profile</a>
+                    </li>
+                    <li>
+                        <a class="nav-link active" href="/admin/daftar-pesanan">Daftar Pesanan</a
               >
             </li>
             <li>
               <a class="getstarted scrollto rounded-pill" href="/">Logout</a>
-            </li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav>
-        <!-- .navbar -->
-      </div>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
     </header>
 
     <!-- Main Content -->
     <main class="py-5 container">
-      <h2 class="mt-5 mb-4 pt-5 fw-bold">Daftar Pesanan</h2>
-      <div class="table-responsive">
-        <table class="table table-bordered table-hover">
-          <thead class="table-dark text-center">
-            <tr>
-              <th scope="col">No</th>
-              <th scope="col">Kode Pesanan</th>
-              <th scope="col">Nama Pemesan</th>
-              <th scope="col">Status Pesanan</th>
-              <th scope="col">Aksi</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>QK6AJI6S</td>
-              <td>Johannes Gulla</td>
+        <h2 class="mt-5 mb-4 pt-5 fw-bold">Daftar Pesanan</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Kode Pesanan</th>
+                        <th scope="col">Nama Pemesan</th>
+                        <th scope="col">Status Pesanan</th>
+                        <th scope="col">Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>QK6AJI6S</td>
+                        <td>Johannes Gulla</td>
 
-              <td><span class="badge bg-danger">Belum bayar</span></td>
-              <td class="text-center">
-                <a
-                  class="btn btn-outline-dark"
-                  href="/admin/detail-pesanan/QK6AJI6S"
-                  >Lihat detail</a
+                        <td><span class="badge bg-danger">Belum bayar</span></td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-dark" href="/admin/detail-pesanan/QK6AJI6S">Lihat detail</a
                 >
               </td>
             </tr>
@@ -126,16 +119,30 @@
     </main>
 
     <!-- Footer -->
-    <footer class="mt-5 py-5 text-white">
-      <div class="container">
-        <a href="/" class="logo d-flex align-items-center mb-4">
-          <img src="/assets/img/logo.png" alt="TitiPrint" class="me-4" />
-          <span><span class="text-white">Titi</span>Print</span>
-        </a>
-        <p>Copyright &copy; 2022. <span class="fw-semibold">TitiPrint</span></p>
-      </div>
-    </footer>
+    <footer class="mt-4 p-5 text-white">
+      <div class="row">
+          <div class="col-lg-3 d-flex flex-column">
+              <a href="/" class="logo d-flex align-items-center mb-4">
+                  <img src="/assets/img/logo.png" alt="TitiPrint" class="me-4" />
+                  <span><span class="text-white">Titi</span>Print</span>
+              </a>
+                            <p>Copyright &copy; 2022. <span class="fw-semibold">TitiPrint</span></p>
+        </div>
+        <div class="col-lg-6 d-flex flex-column">
+            <div class="ms-md-5 flex-grow-1 detail-information">
+                <h5>Alamat</h5>
+                <p>Jalan Ir. H. Juanda No. 1, Bogor, Jawa Barat</p>
+                <h5>Nomor Telepon</h5>
+                <p>081234567891</p>
+                <h5>Email</h5>
+                <p>admin123@gmail.com</p>
+            </div>
+        </div>
+        </div>
+        </footer>
 
-    <script src="/assets/js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
-  </body>
+
+        <script src="/assets/js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
